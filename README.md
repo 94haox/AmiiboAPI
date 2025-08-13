@@ -15,7 +15,7 @@
 
 A RESTful API that was created for retriving amiibo information.
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://www.heroku.com/deploy?template=https://github.com/heroku/nodejs-getting-started)
 [![Deploy](https://imgur.com/WTCkMSx.png)](https://deploy.zeet.co/?url=https://github.com/n3evin/amiiboapi)
 
 ### Features

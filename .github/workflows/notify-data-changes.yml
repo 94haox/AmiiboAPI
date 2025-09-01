@@ -1,0 +1,64 @@
+name: Notify Data Changes
+
+on:
+  push:
+    branches: [ master, main ]
+    paths:
+      - 'database/amiibo.json'
+      - 'database/games_info.json'
+
+jobs:
+  notify-changes:
+    runs-on: ubuntu-latest
+    if: contains(github.event.head_commit.message, 'database/') || contains(github.event.head_commit.modified, 'database/amiibo.json') || contains(github.event.head_commit.modified, 'database/games_info.json')
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+          
+      - name: Check for data file changes
+        id: check-files
+        run: |
+          # Check if amiibo.json changed
+          if git diff --name-only HEAD~1 HEAD | grep -q "database/amiibo.json"; then
+            echo "amiibo_changed=true" >> $GITHUB_OUTPUT
+            echo "✅ amiibo.json changed"
+          else
+            echo "amiibo_changed=false" >> $GITHUB_OUTPUT
+          fi
+          
+          # Check if games_info.json changed  
+          if git diff --name-only HEAD~1 HEAD | grep -q "database/games_info.json"; then
+            echo "games_info_changed=true" >> $GITHUB_OUTPUT
+            echo "✅ games_info.json changed"
+          else
+            echo "games_info_changed=false" >> $GITHUB_OUTPUT
+          fi
+          
+      - name: Trigger sync in boon_hono
+        if: steps.check-files.outputs.amiibo_changed == 'true' || steps.check-files.outputs.games_info_changed == 'true'
+        run: |
+          curl -X POST \
+            -H "Authorization: Bearer ${{ secrets.PERSONAL_ACCESS_TOKEN }}" \
+            -H "Accept: application/vnd.github.v3+json" \
+            -H "Content-Type: application/json" \
+            https://api.github.com/repos/tao-wu/boon_hono/dispatches \
+            -d '{
+              "event_type": "amiibo-data-updated",
+              "client_payload": {
+                "amiibo_changed": "${{ steps.check-files.outputs.amiibo_changed }}",
+                "games_info_changed": "${{ steps.check-files.outputs.games_info_changed }}",
+                "commit_sha": "${{ github.sha }}",
+                "commit_message": "${{ github.event.head_commit.message }}"
+              }
+            }'
+            
+      - name: Log sync trigger
+        if: steps.check-files.outputs.amiibo_changed == 'true' || steps.check-files.outputs.games_info_changed == 'true'
+        run: |
+          echo "🔄 Triggered data sync in boon_hono repository"
+          echo "📁 Changed files:"
+          [[ "${{ steps.check-files.outputs.amiibo_changed }}" == "true" ]] && echo "  - database/amiibo.json"
+          [[ "${{ steps.check-files.outputs.games_info_changed }}" == "true" ]] && echo "  - database/games_info.json"

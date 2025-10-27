@@ -18435,6 +18435,30 @@
 					]
 				},
 				{
+					"gameName": "Super Mario Galaxy",
+					"gameID": [
+						"010099C022B96000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Receive a helpful item depending on the character",
+							"write": false
+						}
+					]
+				},
+				{
+					"gameName": "Super Mario Galaxy 2",
+					"gameID": [
+						"0100FD8022DAA000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Receive a helpful item depending on the character",
+							"write": false
+						}
+					]
+				},
+				{
 					"gameName": "Super Mario Party",
 					"gameID": [
 						"010036B0034E4000"
@@ -18636,6 +18660,30 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Receive a particular power-up depending on the character",
+							"write": false
+						}
+					]
+				},
+				{
+					"gameName": "Super Mario Galaxy",
+					"gameID": [
+						"010099C022B96000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Receive a helpful item depending on the character",
+							"write": false
+						}
+					]
+				},
+				{
+					"gameName": "Super Mario Galaxy 2",
+					"gameID": [
+						"0100FD8022DAA000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Receive a helpful item depending on the character",
 							"write": false
 						}
 					]
@@ -92919,7 +92967,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Get Missile Reserve Tank (replenishes missiles when empty) / After beating game: Unlock concept art",
+							"Usage": "Receive a useful items depending on the amiibo / After beating the game: Unlock a bonus or feature depending on the amiibo",
 							"write": false
 						}
 					]
@@ -93206,7 +93254,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Get Aeon Reserve Tank (refills gauge when empty) / After beating game: Unlock Metroid II art",
+							"Usage": "Receive a useful items depending on the amiibo / After beating the game: Unlock a bonus or feature depending on the amiibo",
 							"write": false
 						}
 					]
@@ -93492,6 +93540,20 @@
 						},
 						{
 							"Usage": "Unlock an armor paint job with additional auxiliary ammo for use in campaign missions",
+							"write": false
+						}
+					]
+				},
+				{
+					"gameName": "Metroid: Samus Returns",
+					"gameID": [
+						"00040000001BB200",
+						"00040000001BFB00",
+						"00040000001BFC00"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Receive a useful items depending on the amiibo / After beating the game: Unlock a bonus or feature depending on the amiibo",
 							"write": false
 						}
 					]
@@ -93814,7 +93876,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Get Energy Reserve Tank (replenishes health when empty) / After beating game: Unlock Sound Test mode",
+							"Usage": "Receive a useful items depending on the amiibo / After beating the game: Unlock a bonus or feature depending on the amiibo",
 							"write": false
 						}
 					]
@@ -94059,7 +94121,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Place a Metroid Marker (see closest Metroid on map) / After beating game: Unlock Fusion difficulty mode and play with Fusion suit",
+							"Usage": "Receive a useful items depending on the amiibo / After beating the game: Unlock a bonus or feature depending on the amiibo",
 							"write": false
 						}
 					]

@@ -111849,7 +111849,20 @@
 					]
 				}
 			],
-			"gamesSwitch2": []
+			"gamesSwitch2": [
+				{
+					"gameName": "Xenoblade Chronicles: Definitive Edition – Nintendo Switch 2 Edition",
+					"gameID": [
+						"0100FF500E34A000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "More easily unlock special costumes / Receive useful items and experience points",
+							"write": false
+						}
+					]
+				}
+			]
 		},
 		"0x22410000041e0002": {
 			"games3DS": [],
@@ -111880,7 +111893,20 @@
 					]
 				}
 			],
-			"gamesSwitch2": []
+			"gamesSwitch2": [
+				{
+					"gameName": "Xenoblade Chronicles: Definitive Edition – Nintendo Switch 2 Edition",
+					"gameID": [
+						"0100FF500E34A000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "More easily unlock special costumes / Receive useful items and experience points",
+							"write": false
+						}
+					]
+				}
+			]
 		},
 		"0x22420000041f0002": {
 			"games3DS": [],
@@ -111911,7 +111937,20 @@
 					]
 				}
 			],
-			"gamesSwitch2": []
+			"gamesSwitch2": [
+				{
+					"gameName": "Xenoblade Chronicles: Definitive Edition – Nintendo Switch 2 Edition",
+					"gameID": [
+						"0100FF500E34A000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "More easily unlock special costumes / Receive useful items and experience points",
+							"write": false
+						}
+					]
+				}
+			]
 		},
 		"0x22430000043d1b02": {
 			"games3DS": [],
@@ -111930,7 +111969,20 @@
 					]
 				}
 			],
-			"gamesSwitch2": []
+			"gamesSwitch2": [
+				{
+					"gameName": "Xenoblade Chronicles: Definitive Edition – Nintendo Switch 2 Edition",
+					"gameID": [
+						"0100FF500E34A000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "More easily unlock special costumes / Receive useful items and experience points",
+							"write": false
+						}
+					]
+				}
+			]
 		},
 		"0x22440000043e1b02": {
 			"games3DS": [],
@@ -111949,7 +112001,20 @@
 					]
 				}
 			],
-			"gamesSwitch2": []
+			"gamesSwitch2": [
+				{
+					"gameName": "Xenoblade Chronicles: Definitive Edition – Nintendo Switch 2 Edition",
+					"gameID": [
+						"0100FF500E34A000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "More easily unlock special costumes / Receive useful items and experience points",
+							"write": false
+						}
+					]
+				}
+			]
 		},
 		"0x22800000002c0002": {
 			"games3DS": [
